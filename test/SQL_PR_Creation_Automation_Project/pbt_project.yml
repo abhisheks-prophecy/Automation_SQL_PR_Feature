@@ -23,7 +23,33 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/SQL_PR_Creation_Automation_Model:
+    name: SQL_PR_Creation_Automation_Model
+    schema:
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: name
+        dataType:
+          type: String
+      - name: updated_at
+        dataType:
+          type: Date
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/testmodel/SQL_PR_Creation_Automation_Model.sql
+    - .prophecy/ide/models/SQL_PR_Creation_Automation_Model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-08-01 12:06:37'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -36,7 +62,26 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2024-08-01 12:05:15'
-sqlSeeds: {}
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/qa_test_seed_job_Databricks:
+    name: qa_test_seed_job_Databricks
+    schema:
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: name
+        dataType:
+          type: String
+      - name: updated_at
+        dataType:
+          type: Date
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - seeds/qa_test_seed_job_Databricks.csv
+    createdAt: '2024-08-01 12:06:47'
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline:
